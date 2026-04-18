@@ -1,0 +1,83 @@
+$date
+	Sat Apr 18 16:44:40 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_tb $end
+$var wire 8 ! result [7:0] $end
+$var wire 1 " carry $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 3 % op [2:0] $end
+$scope module ins $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 3 ( op [2:0] $end
+$var reg 1 " carry $end
+$var reg 8 ) result [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1101110 )
+b0 (
+b1100100 '
+b1010 &
+b0 %
+b1100100 $
+b1010 #
+0"
+b1101110 !
+$end
+#10
+1"
+b10110000 !
+b10110000 )
+b1011010 $
+b1011010 '
+b1 %
+b1 (
+#20
+b1010 !
+b1010 )
+0"
+b1100100 $
+b1100100 '
+b1101110 #
+b1101110 &
+#30
+b1000010 !
+b1000010 )
+b11000110 $
+b11000110 '
+b1100010 #
+b1100010 &
+b10 %
+b10 (
+#40
+b1111110 !
+b1111110 )
+b11110 $
+b11110 '
+b1101110 #
+b1101110 &
+b11 %
+b11 (
+#50
+b11 !
+b11 )
+b1111011 $
+b1111011 '
+b1111000 #
+b1111000 &
+b100 %
+b100 (
+#60
