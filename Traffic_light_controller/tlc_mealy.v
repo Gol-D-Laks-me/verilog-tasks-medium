@@ -1,6 +1,8 @@
+// an extra feature "pedestrian" is added\
 module tlc(
     input clk,
     input reset,
+    input pedestrian;
     output reg red,
     output reg yellow,
     output reg green
@@ -28,7 +30,10 @@ end
 always @(*) begin
     case(state)
         RED:    n_state = GREEN;
-        GREEN:  n_state = YELLOW;
+        GREEN:begin
+          if(pedestrian) n_state = YELLOW;
+          else n_state = GREEN;
+        end  
         YELLOW: n_state = RED;
         default:n_state = RED;
     endcase
